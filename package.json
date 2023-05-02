@@ -1,0 +1,17 @@
+{
+  "name": "node_redis",
+  "version": "1.0.0",
+  "description": "1. SET key value\r 2. GET key\r 3. KEYS \\*\r    // get all keys in database",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "redis": "^4.6.6"
+  }
+}

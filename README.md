@@ -7,36 +7,36 @@
 1. SET key value
 2. GET key
 3. KEYS \*
-   // get all keys in database
+   . get all keys in database
 
 ### Check And Delete All
 
 4. EXISTS key
-   // Check if exist
+   . Check if exist
 5. flushall
-   // delete all
+   . delete all
 
 ### Handling expirations
 
 6. ttl key
-   // stands for time to live
+   . stands for time to live
 7. expire key seconds
-   // Eample: expire name 10
+   . Eample: expire name 10
 8. setex key second value
 
 ### Lists (Array)
 
 9. lpush arrayName item
-   // To push element in array
+   . To push element in array
 10. lrange listname start stop
-    // Eample lrange friends 0 -1 :- get all elements
+    . Eample lrange friends 0 -1 :- get all elements
 11. rpush arrayName item
-    // Add item to the end of array
+    . Add item to the end of array
 12. rpop arrayName
-    // Eample : rpop friends
-    // Delete The Last Item In Array
+    . Eample : rpop friends
+    . Delete The Last Item In Array
 13. lpop arrayName
-    // Delete The First Item In Array
+    . Delete The First Item In Array
 
 ### Sets (Unique Array)
 
@@ -66,8 +66,7 @@
 ### Hashs
 
 ```bash
-    - Hashs is another key value pairs
-    Like Array and Set
+    - Hashs is another key value pairs.
     - You can thing of it as key value pair inside
     of key value pair
     - You cann't have hashes inside of hashes so it's like a json object
@@ -83,7 +82,7 @@
 
 ```bash
 Example
-    - HSET person name Mmofed
+    - HSET person name mofed
     - HSET person age 24
 ```
 
@@ -118,9 +117,24 @@ Example
 Example
     - HDEL person age
     Return
-        - \(integer\) 1
+        - \(integer) 1
 
     - HGET person age
     Return
-        - \(nil\)
+        - \(nil)
+```
+
+21. HEXISTS hashName field
+
+```bash
+Example
+    - To Check if the field exists
+```
+
+# Nodejs & Redis
+
+. To use redis
+
+```bash
+    npm install redis
 ```
