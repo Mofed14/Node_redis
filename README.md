@@ -7,19 +7,19 @@
 1. SET key value
 2. GET key
 3. KEYS \*
-   . get all keys in database
+   > get all keys in database
 
 ### Check And Delete All
 
 4. EXISTS key
-   . Check if exist
+   - Check if exist
 5. flushall
-   . delete all
+   - delete all
 
 ### Handling expirations
 
 6. ttl key
-   . stands for time to live
+   - stands for time to live
 7. expire key seconds
    . Eample: expire name 10
 8. setex key second value
@@ -117,17 +117,16 @@ Example
 Example
     - HDEL person age
     Return
-        - \(integer) 1
+        - (integer) 1
 
     - HGET person age
     Return
-        - \(nil)
+        - (nil)
 ```
 
 21. HEXISTS hashName field
 
 ```bash
-Example
     - To Check if the field exists
 ```
 
