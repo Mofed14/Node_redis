@@ -4,6 +4,6 @@
 
 ### Redis Basic Commands
 
-<p style="color:red;">Add Things To Database</p>
+<span style="color:blue;">### This heading is blue.</span>
 
 1. SET name thing
