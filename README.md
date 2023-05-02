@@ -4,7 +4,6 @@
 
 ### Redis Basic Commands
 
-#c5f015 Add Things To Database
-! Add Things To Database
+// Add Things
 
 1. SET name thing
