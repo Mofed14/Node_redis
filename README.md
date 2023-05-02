@@ -4,6 +4,6 @@
 
 ### Redis Basic Commands
 
-![Add Things To Database](https://img.shields.io/badge/-Custom%20Text-#00ff00?style=flat-square&logo=appveyor&logoColor=white&labelColor=black)
+<p style="color:red;">Add Things To Database</p>
 
 1. SET name thing
