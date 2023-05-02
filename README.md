@@ -54,3 +54,73 @@
     SMEMBERS hobbies return "Weight lifting".
     - If I try to add the "Weight lifting" again like SADD hobbies "Weight lifting". It is not working and return (integer) 0.
 ```
+
+16. SREM setName value
+
+```bash
+    This (SREM) stands  for set remove
+    To remove specific item.
+    SREM hobbies "Weight lifting".
+```
+
+### Hashs
+
+```bash
+    - Hashs is another key value pairs
+    Like Array and Set
+    - You can thing of it as key value pair inside
+    of key value pair
+    - You cann't have hashes inside of hashes so it's like a json object
+    but you can not have any nesting at all inside of it. it's
+    just one set of key value pairs
+    - So to do any thing with hashes you're going to prefix every command
+    with an [H]
+    - It is like an Object
+
+```
+
+17. HSET hashName fiel value
+
+```bash
+Example
+    - HSET person name Mmofed
+    - HSET person age 24
+```
+
+18. HGETALL hashname
+
+```bash
+Example
+    - HGETALL person
+    Return
+        - 1) "name"
+        - 2) "mofed"
+        - 3) "age"
+        - 4) "24"
+```
+
+19. HGET hasname field
+
+```bash
+Example
+    - HGET person name
+    Return
+        - "mofed"
+
+    -  HGET person age
+    Return
+        - "24"
+```
+
+20. HDEL hashName field
+
+```bash
+Example
+    - HDEL person age
+    Return
+        - \(integer\) 1
+
+    - HGET person age
+    Return
+        - \(nil\)
+```
