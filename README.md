@@ -24,7 +24,7 @@
    // Eample: expire name 10
 8. setex key second value
 
-### Lists
+### Lists (Array)
 
 9. lpush arrayName item
    // To push element in array
@@ -41,8 +41,16 @@
 ### Sets (Unique Array)
 
 14. SADD setName Member
-    // (SADD) Stands For Set add
-    // Eample: SADD hobbies "Weight lifting"
+
+```bash
+     (SADD) Stands For Set add
+     Eample: SADD hobbies "Weight lifting"
+```
+
 15. SMEMBERS setName
-    // SMEMBERS hobbies : "Weight lifting"
+
+```bash
+    To return all data.
+    SMEMBERS hobbies return "Weight lifting".
     - If I try to add the "Weight lifting" again like SADD hobbies "Weight lifting". It is not working and return (integer) 0.
+```
