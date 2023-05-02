@@ -42,30 +42,34 @@
 
 14. SADD setName Member
 
+    - (SADD) Stands For Set add
+    - Eample:
+
 ```bash
-     (SADD) Stands For Set add
-     Eample: SADD hobbies "Weight lifting"
+      - SADD hobbies "Weight lifting"
 ```
 
 15. SMEMBERS setName
+    - To return all data.
 
 ```bash
-    To return all data.
-    SMEMBERS hobbies return "Weight lifting".
-    - If I try to add the "Weight lifting" again like SADD hobbies "Weight lifting". It is not working and return (integer) 0.
+    - SMEMBERS hobbies
+
 ```
 
+- If I try to add the "Weight lifting" again like SADD hobbies "Weight lifting". It is not working and return (integer) 0.
+
 16. SREM setName value
+    - This (SREM) stands for set remove
+    - To remove specific item.
 
 ```bash
-    This (SREM) stands  for set remove
-    To remove specific item.
-    SREM hobbies "Weight lifting".
+    - SREM hobbies "Weight lifting".
 ```
 
 ### Hashs
 
-```bash
+```
     - Hashs is another key value pairs.
     - You can thing of it as key value pair inside
     of key value pair
@@ -75,7 +79,6 @@
     - So to do any thing with hashes you're going to prefix every command
     with an [H]
     - It is like an Object
-
 ```
 
 17. HSET hashName fiel value
