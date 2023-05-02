@@ -46,14 +46,14 @@
     - Eample:
 
 ```bash
-      - SADD hobbies "Weight lifting"
+       SADD hobbies "Weight lifting"
 ```
 
 15. SMEMBERS setName
     - To return all data.
 
 ```bash
-    - SMEMBERS hobbies
+     SMEMBERS hobbies
 
 ```
 
@@ -64,7 +64,7 @@
     - To remove specific item.
 
 ```bash
-    - SREM hobbies "Weight lifting".
+    SREM hobbies "Weight lifting".
 ```
 
 ### Hashs
@@ -85,14 +85,15 @@
 
 ```bash
 Example
-    - HSET person name mofed
-    - HSET person age 24
+     HSET person name mofed
+     HSET person age 24
 ```
 
 18. HGETALL hashname
 
+- Example
+
 ```bash
-Example
     - HGETALL person
     Return
         - 1) "name"
@@ -103,35 +104,34 @@ Example
 
 19. HGET hasname field
 
+- Example
+
 ```bash
-Example
     - HGET person name
     Return
-        - "mofed"
+         "mofed"
 
     -  HGET person age
     Return
-        - "24"
+         "24"
 ```
 
 20. HDEL hashName field
 
+- Example
+
 ```bash
-Example
-    - HDEL person age
+     HDEL person age
     Return
         - (integer) 1
 
-    - HGET person age
+     HGET person age
     Return
         - (nil)
 ```
 
 21. HEXISTS hashName field
-
-```bash
     - To Check if the field exists
-```
 
 # Nodejs & Redis
 
